@@ -1,0 +1,327 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.kalkulator {
+  width: 100%;
+  height: 100vh;
+  background: url("math.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.box .pr .vstup2, .box .pr .vystup {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box, .box .pr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  top: -100%;
+  background: black;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.box {
+  width: 40%;
+  height: 60vh;
+  background: rgba(0, 0, 0, 0.747);
+  border-radius: 24px;
+}
+
+.box .fa-list {
+  color: white;
+  font-size: 28px;
+  position: fixed;
+  top: 5%;
+  left: 90%;
+  cursor: pointer;
+}
+
+.box .pr {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box .pr h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  margin: 15px;
+}
+
+.box .pr #text1 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  -webkit-box-shadow: 5px 5px gray;
+          box-shadow: 5px 5px gray;
+  font-size: 28px;
+}
+
+.box .pr .vstup2 {
+  padding-top: 15%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.box .pr .vstup2 p {
+  color: white;
+  padding: 10px;
+  font-size: 28px;
+}
+
+.box .pr .vstup2 #jednotky {
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+  padding: 5px 5px;
+}
+
+.box .pr .vstup2 #jednotky2 {
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+  padding: 5px 5px;
+}
+
+.box .pr .vystup #vystup {
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  -webkit-box-shadow: 5px 5px gray;
+          box-shadow: 5px 5px gray;
+  font-size: 28px;
+}
+
+.box .pr #btn {
+  position: relative;
+  border: none;
+  border-radius: 12px;
+  margin-top: -5px;
+  background: #0066ff;
+  color: white;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  padding: 15px 24px;
+  font-size: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.box .pr .rv {
+  text-align: center;
+  font-size: 28px;
+  color: white;
+  margin: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.zk {
+  color: white;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  text-align: center;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  cursor: pointer;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.front i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: white;
+}
+
+.footer {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  background: black;
+}
+
+.footer .copy {
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 16px;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media only screen and (max-width: 1440px) {
+  .box {
+    width: 60%;
+    height: 90vh;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .box {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .box .pr h1 {
+    font-size: 26px;
+  }
+  .box .pr #text1 {
+    font-size: 20px;
+    width: 240px;
+    height: 45px;
+  }
+  .box .pr .vstup2 #jednotky {
+    font-size: 20px;
+  }
+  .box .pr .vstup2 #jednotky2 {
+    font-size: 20px;
+  }
+  .box .pr .vystup #vystup {
+    font-size: 20px;
+    width: 240px;
+    height: 45px;
+  }
+  .front i {
+    font-size: 40px;
+  }
+  .footer {
+    height: 60px;
+  }
+  .footer .copy {
+    font-size: 14px;
+    top: 30%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .box .pr .vstup2 #jednotky {
+    font-size: 18px;
+  }
+  .box .pr .vstup2 #jednotky2 {
+    font-size: 18px;
+  }
+  .box .pr #text1 {
+    width: 200px;
+    height: 40px;
+  }
+  .box .pr #btn {
+    margin-top: -20px;
+  }
+  .box .pr .rv {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .box .pr .vystup #vystup {
+    width: 200px;
+    height: 40px;
+  }
+  .box .pr .dropdown-content {
+    margin-top: -80%;
+    min-width: 100px;
+  }
+}
+/*# sourceMappingURL=kalkulator.css.map */

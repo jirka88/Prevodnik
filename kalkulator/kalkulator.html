@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kalkulator.css">
+    <script src="kalkulator.js"></script>
+    <title>Kalkulator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6af5dfbcd9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="kalkulator" id="0">
+        <div class="box">
+            <div class="pr">
+                <h1 id="prevod">Převodník</h1>
+                <input type="number" id="text1" min="0">
+                <div class="vstup2">
+                    <select id="jednotky">
+                    </select>
+                    <p>na</p>
+                    <select id="jednotky2">
+                    </select>
+                </div>
+                <input type="button" id="btn" value="spočítej"
+                    onclick="document.getElementById('vystup').value=generuj()">
+                <p class="rv">=</p>
+                <div class="vystup">
+                    <input type="text" id="vystup" readonly placeholder="Výsledek" pattern="[-]"><br>
+                </div>
+                <p class="zk" id="zk">zkratky?<input type="checkbox" id="kontrola" checked></p>
+                <div class="dropdown">
+                    <button class="dropbtn">převody</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="delky()">Délka</a>
+                        <a href="#" onclick="hmotnost()">Hmotnost</a>
+                        <a href="#" onclick="obsah()">Obsah</a>
+                        <a href="#" onclick="objem()">Objem</a>
+                        <a href="#" onclick="cas()">Čas</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="copy" id="rok"></p>
+        <script>
+            var d = new Date();
+            document.getElementById("rok").innerHTML = "© Jiří Navrátil" + " " + d.getFullYear();
+        </script>
+    </div>
+</body>
+
+</html>
