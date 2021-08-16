@@ -805,6 +805,13 @@ function vymaz() {                                                              
         }
         uloziste.splice(0, uloziste.length);
     }
+    var box = document.getElementById("0");
+    if (box.style.height === "450px") {
+
+
+        box.style.height = "600px";
+    }
+
 }
 function vytvor(pole) {                                                                         //vytvoří jednotky pomocí parametru
     for (let index = 0; index < pole.length; index++) {

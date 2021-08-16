@@ -184,7 +184,8 @@ $mobilefont: 20px;
     font-family: 'Open Sans', sans-serif;
   }
   
-  .dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown-content a:hover {background-color: #f1f1f1
+}
   
   .dropdown:hover .dropdown-content {
     display: block;
@@ -225,9 +226,13 @@ $mobilefont: 20px;
 }
 @media only screen and(max-width: 1024px) {
     .box {
+        all:unset;
         width: 100%;
         height: 100vh;
-       
+        background: rgba(0, 0, 0, 0.747);
+        display:flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 @media only screen and(max-width: 480px) {
@@ -238,7 +243,7 @@ $mobilefont: 20px;
             }
             #text1 {
                  font-size: $mobilefont;
-                 width: 240px;
+                 width: 60vw;
                 height: 45px;
             }
             .vstup2 {
@@ -252,7 +257,7 @@ $mobilefont: 20px;
             .vystup {
                 #vystup {
                     font-size: $mobilefont;
-                    width: 240px;
+                    width: 60vw;
                     height: 45px;
                 }
             }
@@ -280,10 +285,6 @@ $mobilefont: 20px;
                     font-size: 18px;
                 }
             }
-            #text1 {
-                width: 200px;
-                height: 40px;
-            }
             #btn {
                 margin-top:-20px;
             }
@@ -291,19 +292,36 @@ $mobilefont: 20px;
                 margin-top: 5px;
                 margin-bottom: 5px;
             }
-            .vystup {
-                #vystup {
-                    width: 200px;
-                    height: 40px;
-                }
-              
-            }
             .dropdown-content {  
                 margin-top: -80%;              
                 min-width: 100px;          
               }
         }
         
+    }
+    
+}
+@media only screen and(max-height: 450px) {
+    .kalkulator {
+        height: 450px;
+        .box {
+            height: 450px;
+            h1 {
+                font-size: 28px;         
+                margin-top: 50px;
+            }
+            .vstup2 {
+                #jednotky2 {
+                    font-size: 22px;
+                }
+                #jednotky {
+                    font-size: 22px;
+                }
+            }
+            .pr {
+                height: 450px;                            
+            }
+        }
     }
     
 }

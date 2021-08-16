@@ -260,8 +260,19 @@ body {
 
 @media only screen and (max-width: 1024px) {
   .box {
+    all: unset;
     width: 100%;
     height: 100vh;
+    background: rgba(0, 0, 0, 0.747);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -271,7 +282,7 @@ body {
   }
   .box .pr #text1 {
     font-size: 20px;
-    width: 240px;
+    width: 60vw;
     height: 45px;
   }
   .box .pr .vstup2 #jednotky {
@@ -282,7 +293,7 @@ body {
   }
   .box .pr .vystup #vystup {
     font-size: 20px;
-    width: 240px;
+    width: 60vw;
     height: 45px;
   }
   .front i {
@@ -304,10 +315,6 @@ body {
   .box .pr .vstup2 #jednotky2 {
     font-size: 18px;
   }
-  .box .pr #text1 {
-    width: 200px;
-    height: 40px;
-  }
   .box .pr #btn {
     margin-top: -20px;
   }
@@ -315,13 +322,31 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  .box .pr .vystup #vystup {
-    width: 200px;
-    height: 40px;
-  }
   .box .pr .dropdown-content {
     margin-top: -80%;
     min-width: 100px;
+  }
+}
+
+@media only screen and (max-height: 450px) {
+  .kalkulator {
+    height: 450px;
+  }
+  .kalkulator .box {
+    height: 450px;
+  }
+  .kalkulator .box h1 {
+    font-size: 28px;
+    margin-top: 50px;
+  }
+  .kalkulator .box .vstup2 #jednotky2 {
+    font-size: 22px;
+  }
+  .kalkulator .box .vstup2 #jednotky {
+    font-size: 22px;
+  }
+  .kalkulator .box .pr {
+    height: 450px;
   }
 }
 /*# sourceMappingURL=kalkulator.css.map */
